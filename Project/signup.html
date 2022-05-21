@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Login and Register form</title>
+	<link rel="stylesheet" type="text/css" href="signup.css">
+	<link href="https://fonts.googleapis.com/css2?family=Corinthia&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<br>
+	<header>
+		<div class="container">
+			<p class="logo">NeeDed</p>
+			<nav>
+				<ul type="none">
+					<li><a href="PROJECT.html">Home</a></li>
+                    <li><a href="About.html">About</a></li>
+                    <li><a href="News.html">News</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="signup.html">Signup <img src="../Project/Images/sign-up.png" height="20px" alt=""
+                                id="sgn"></a></li>
+                </ul>
+			</nav>
+		</div>
+	</header>
+
+	<div class="hero">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn"></div>
+				<button type="button" class="toggle-btn" onclick="login()">Log-In</button>
+				<button type="button" class="toggle-btn" onclick="signup()">Sign-up</button>
+			</div>
+			<div class="social-icons">
+				<img src="../Project/Images/fb.png">
+				<img src="../Project/Images/insta.png">
+				<img src="../Project/Images/twitter.png">
+			</div>
+
+
+			<form id="log-in" class="input-group">
+				<input type="text" class="input-field" placeholder="User Id" required>
+				<input type="text" class="input-field" placeholder="Enter Password" required>
+				<input type="checkbox" class="check-box" checked><span>Remember Password</span>
+				<button type="submit" class="submit-btn">Log-In</button>
+			</form>
+			<form id="sign-in" class="input-group">
+				<input type="text" class="input-field" placeholder="User Id" required>
+				<input type="email" class="input-field" placeholder="Email Id(example@gmail.com)" required>
+				<input type="text" class="input-field" placeholder="Enter Password" required>
+				<input type="checkbox" class="check-box" required><span>I Agree to the terms & Conditions</span>
+				<button type="submit" class="submit-btn">Sign-In</button>
+			</form>
+
+		</div>
+
+
+	</div>
+
+	<script>
+		var x = document.getElementById("log-in");
+		var y = document.getElementById("sign-in");
+		var z = document.getElementById("btn");
+
+		function signup() {
+			x.style.left = "-400px";
+			y.style.left = "50px";
+			z.style.left = "110px"
+		}
+
+		function login() {
+			x.style.left = "50px";
+			y.style.left = "450px";
+			z.style.left = "0"
+		}
+	</script>
+	<br><br>
+	<footer>
+		<div class="footer-content">
+			<h3>NeeDed</h3>
+			<!-- <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum nemo placeat corrupti tempora, illo id tempore quibusdam. Quos, fugiat magnam!</p> -->
+			<ul class="socials">
+				<li><a href="#">
+						<p class="fa fa-facebook"></p>
+					</a></li>
+				<li><a href="#">
+						<p class="fa fa-twitter"></p>
+					</a></li>
+				<li><a href="#">
+						<p class="fa fa-google-plus "></p>
+					</a></li>
+				<li><a href="#">
+						<p class="fa fa-youtube"></p>
+					</a></li>
+				<li><a href="#">
+						<p class="fa fa-linkedin-square"></p>
+					</a></li>
+			</ul>
+		</div>
+		<div class="footer-bottom">
+			<p>copyright &copy; 2020 NeeDed. designed by <b>aaur</b> </p>
+		</div>
+	</footer>
+
+</body>
+
+</html>

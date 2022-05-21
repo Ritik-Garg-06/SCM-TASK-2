@@ -1,0 +1,1108 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 600;
+}
+body {
+  min-height: 100vh;
+  width: 90%;
+  position: relative;
+  /* background-image: linear-gradient(); */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.background-image {
+  height: 40px;
+  margin: 0 auto;
+}
+
+/*------------------NAVBAR------------------*/
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: inline;
+}
+
+header {
+  background: #0abab0;
+  border: 4px solid #63e7bb;
+  border-bottom-right-radius: 4px;
+  border-bottom-left-radius: 4px;
+  border-radius: 25px 0px 25px 0px;;
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: left;
+}
+
+.logo {
+  float: left;
+  padding: 7px 0;
+  cursor: pointer;
+  padding-left: 25px;
+}
+#sgn {
+  vertical-align: middle;
+}
+nav {
+  float: right;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 40px;
+  padding-top: 5px;
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: black;
+}
+
+nav a::after {
+  content: "";
+  display: block;
+  height: 1.5px;
+  background-color: blanchedalmond;
+  width: 100%;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 350ms ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+  transform: scaleX(1);
+  height: 1.5px;
+  background-color: #30475e;
+  transform-origin: left;
+}
+/* -------------BACKGROUND IMAGES HEAD------------------ */
+.background-image::before {
+  content: "";
+  background-image: url(images/chitkara\ university\ background.jpg);
+  position: absolute;
+  top: 50px;
+  height: 15%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+.pec-background-image::before {
+  content: "";
+  background-image: url(images/pec\ back4.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 50px;
+  height: 15%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+.thapar-background-image::before {
+  content: "";
+  background-image: url(images/thapar/thapar\ back\ 3.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 50px;
+  height: 15%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+.ropar-background-image::before {
+  content: "";
+  background-image: url(images/ropar/ropar\ back.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 50px;
+  height: 15%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+.lpu-background-image::before {
+  content: "";
+  background-image: url(images/lpu/lpu\ back\ 3.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 50px;
+  height: 15%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0;
+}
+.adesh-background-image::before {
+  content: "";
+  background-image: url(images/adesh/adesh\ back\ 1.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 50px;
+  height: 15%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+.CU-background-image::before {
+  content: "";
+  background-image: url(images/CU/CU\ BACK.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 50px;
+  height: 15%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+.DAV-background-image::before {
+  content: "";
+  background-image: url(images/DAV/back\ 4.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 50px;
+  height: 15%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+.Punjabi-background-image::before {
+  content: "";
+  background-image: url(images/punjabi/back\ 1.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 50px;
+  height: 15%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+.Panjab-background-image::before {
+  content: "";
+  background-image: url(images/panjab/back\ 2.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 50px;
+  height: 15%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+.Loyola-background-image::before {
+  content: "";
+  background-image: url(images/LOYOLA/BACK.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 50px;
+  height: 15%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+.Hindu-background-image::before {
+  content: "";
+  background-image: url(images/HINDU/back\ 2.png);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 50px;
+  height: 15%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+.Miranda-background-image::before {
+  content: "";
+  background-image: url(images/MIRANDA/back\ 2.jpeg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 50px;
+  height: 15%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+.Xavier-background-image::before {
+  content: "";
+  background-image: url(images/Xavier/back\ 1.jpg);
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: cover;
+  top: 50px;
+  height: 15%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.8;
+}
+/* -----------------------HEADING ON BACKGROUND IMAGE----------------------- */
+.h1 {
+  margin-top: 135px;
+  margin-left: 69px;
+  font-size: 5rem;
+  font-weight: bolder;
+  color: #0abab0;
+  margin-bottom: 54px;
+}
+.pec-h1 {
+  margin-top: 105px;
+  margin-left: 69px;
+  font-size: 4rem;
+  font-weight: bolder;
+  color:#0abab0;
+  margin-bottom: 54px;
+}
+.thapar-h1 {
+  margin-top: 105px;
+  margin-left: 69px;
+  font-size: 3rem;
+  font-weight: bolder;
+  color: #0abab0;
+  margin-bottom: 54px;
+}
+.ropar-h1 {
+  margin-top: 105px;
+  margin-left: 69px;
+  font-size: 3rem;
+  font-weight: bolder;
+  color:#0abab0;
+  margin-bottom: 54px;
+}
+.material-back-image {
+  margin-top: 170px;
+}
+/* --------BACKGROUND IMAGE BUTTON--------- */
+.but {
+  margin-left: 69px;
+  font-size: 2rem;
+  border-radius: 25px;
+  padding: 5px;
+  cursor: pointer;
+}
+.but:hover {
+  opacity: 0.7;
+  box-shadow: -0.5px -0.5px 20px 2px rgb(85, 83, 83);
+}
+/* ----------------------GRID DISPLAY LAYOUT---------------------- */
+.layout {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas: "section section aside";
+  /* 'footer footer footer'; */
+  margin-top: 285px;
+}
+.item {
+  padding: 12px 23px;
+  /* border: 2px solid black; */
+}
+#section {
+  grid-area: section;
+  width: 97%;
+}
+#aside {
+  grid-area: aside;
+  max-width: 450px;
+  /* width: 40%; */
+}
+#footer {
+  grid-area: footer;
+}
+.read-more-container {
+  display: flex;
+  flex-direction: column;
+  color: #111;
+  gap: 1rem;
+}
+/* -----------read more description of college------------ */
+.about-college {
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 2px;
+  line-height: 1.4rem;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.read-more-btn {
+  color: #0984e3;
+  cursor: pointer;
+}
+
+.read-more-text {
+  display: none;
+}
+
+.read-more-text--show {
+  display: inline;
+}
+/* --------------COURSES OFFERED BY COLLEGE----------------- */
+.courses-chitkara {
+  margin: 50px 0px;
+  font-weight: bolder;
+  font-size: 2rem;
+}
+.pill-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+.pill {
+  flex-shrink: 0;
+  background-color: #0abab0;
+  cursor: pointer;
+  height: 33px;
+  padding-left: 15px;
+  padding-right: 15px;
+  border-radius: 17px 0px 17px 0px ;
+  display: flex;
+  align-items: center;
+  margin-right: 28px;
+  margin-top: 21px;
+  font-size: 18px;
+  border: none;
+  font-family: NeutrifStudio-SemiBold;
+  cursor: pointer;
+  color: #fff;
+}
+.pill a {
+  text-decoration: none;
+  color: #fff;
+}
+.pill:hover {
+  box-shadow: 0.5px 0.5px 20px 2px rgb(85, 83, 83);
+}
+/* -----------------------------GALLERY---------------------------- */
+.section-top {
+  margin: 80px 0px;
+  width: auto;
+  height: 57vh;
+  overflow: hidden;
+  position: relative;
+  background-image: url(images/chitkara1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: chitkara 14s infinite ease-in-out;
+}
+
+@keyframes chitkara {
+  0% {
+    background-image: url(images/chitkara2.jpg);
+  }
+
+  20% {
+    background-image: url(images/chitkara3.jpg);
+  }
+
+  40% {
+    background-image: url(images/chitkara4.jpeg);
+  }
+
+  60% {
+    background-image: url(images/chitkara5.jpg);
+  }
+
+  80% {
+    background-image: url(images/chitkara6.jpg);
+  }
+
+  100% {
+    background-image: url(images/chitkara7.jfif);
+  }
+}
+.pec-section-top {
+  margin: 80px 0px;
+  width: auto;
+  height: 57vh;
+  overflow: hidden;
+  position: relative;
+  background-image: url(images/pec1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: pec 14s infinite ease-in-out;
+}
+
+@keyframes pec {
+  0% {
+    background-image: url(images/pec2.jpg);
+  }
+
+  20% {
+    background-image: url(images/pec4.jfif);
+  }
+
+  40% {
+    background-image: url(images/pec5.jpg);
+  }
+
+  60% {
+    background-image: url(images/pec6.jpg);
+  }
+
+  80% {
+    background-image: url(images/pec7.webp);
+  }
+
+  100% {
+    background-image: url(images/pec8.jpg);
+  }
+}
+.thapar-section-top {
+  margin: 80px 0px;
+  width: auto;
+  height: 57vh;
+  overflow: hidden;
+  position: relative;
+  background-image: url(images/thapar/thapar1.jfif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: thapar 14s infinite ease-in-out;
+}
+
+@keyframes thapar {
+  0% {
+    background-image: url(images/thapar/thapar2.jpg);
+  }
+
+  20% {
+    background-image: url(images/thapar/thapar3.jpg);
+  }
+
+  40% {
+    background-image: url(images/thapar/thapar4.jpg);
+  }
+
+  60% {
+    background-image: url(images/thapar/thapar5.jfif);
+  }
+
+  80% {
+    background-image: url(images/thapar/thapar6.jpg);
+  }
+
+  100% {
+    background-image: url(images/thapar/thapar7.jpg);
+  }
+}
+.ropar-section-top {
+  margin: 80px 0px;
+  width: auto;
+  height: 57vh;
+  overflow: hidden;
+  position: relative;
+  background-image: url(images/ropar/ropar1.jfif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: ropar 14s infinite ease-in-out;
+}
+
+@keyframes ropar {
+  0% {
+    background-image: url(images/ropar/ropar2.jpg);
+  }
+
+  20% {
+    background-image: url(images/ropar/ropar3.jfif);
+  }
+
+  40% {
+    background-image: url(images/ropar/ropar4.jpg);
+  }
+
+  60% {
+    background-image: url(images/ropar/ropar5.jpeg);
+  }
+
+  80% {
+    background-image: url(images/ropar/ropar8.jpg);
+  }
+
+  100% {
+    background-image: url(images/ropar/ropar7.jpg);
+  }
+}
+.lpu-section-top {
+  margin: 80px 0px;
+  width: auto;
+  height: 57vh;
+  overflow: hidden;
+  position: relative;
+  background-image: url(images/lpu/lpu\ a.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: lpu 14s infinite ease-in-out;
+}
+
+@keyframes lpu {
+  0% {
+    background-image: url(images/lpu/lpu\ b.jpg);
+  }
+
+  20% {
+    background-image: url(images/lpu/lpu\ c.jpg);
+  }
+
+  40% {
+    background-image: url(images/lpu/lpu\ d.jpg);
+  }
+
+  60% {
+    background-image: url(images/lpu/lpu\ h.jpg);
+  }
+
+  80% {
+    background-image: url(images/lpu/lpu\ g.jpg);
+  }
+
+  100% {
+    background-image: url(images/lpu/lpu\ f.jpg);
+  }
+}
+
+.Adesh-section-top {
+  margin: 80px 0px;
+  width: auto;
+  height: 57vh;
+  overflow: hidden;
+  position: relative;
+  background-image: url(images/adesh/adesh\ 1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: Adesh 14s infinite ease-in-out;
+}
+
+@keyframes Adesh {
+  0% {
+    background-image: url(images/adesh/adesh\ 2.jpg);
+  }
+
+  20% {
+    background-image: url(images/adesh/adesh\ 3.jpg);
+  }
+
+  40% {
+    background-image: url(images/adesh/adesh\ 4.jpg);
+  }
+
+  60% {
+    background-image: url(images/adesh/adesh7.jfif);
+  }
+
+  80% {
+    background-image: url(images/adesh/adesh\ 6.jpg);
+  }
+
+  100% {
+    background-image: url(images/adesh/adesh\ 8.jfif);
+  }
+}
+.CU-section-top {
+  margin: 80px 0px;
+  width: auto;
+  height: 57vh;
+  overflow: hidden;
+  position: relative;
+  background-image: url(images/CU/CU\ 1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: CU 14s infinite ease-in-out;
+}
+
+@keyframes CU {
+  0% {
+    background-image: url(images/CU/CU\ 2.jpg);
+  }
+
+  20% {
+    background-image: url(images/CU/CU\ 3.jpg);
+  }
+
+  40% {
+    background-image: url(images/CU/CU\ 4.jpg);
+  }
+
+  60% {
+    background-image: url(images/CU/CU\ 5.jpg);
+  }
+
+  80% {
+    background-image: url(images/CU/CU\ 6.jpg);
+  }
+
+  100% {
+    background-image: url(images/CU/CU\ 7.jpg);
+  }
+}
+.Punjabi-section-top {
+  margin: 80px 0px;
+  width: auto;
+  height: 57vh;
+  overflow: hidden;
+  position: relative;
+  background-image: url(images/punjabi/1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: Punjabi 14s infinite ease-in-out;
+}
+
+@keyframes Punjabi {
+  0% {
+    background-image: url(images/punjabi/2.jpg);
+  }
+
+  20% {
+    background-image: url(images/punjabi/3.jpg);
+  }
+
+  40% {
+    background-image: url(images/punjabi/4.jpg);
+  }
+
+  60% {
+    background-image: url(images/punjabi/5.jpg);
+  }
+
+  80% {
+    background-image: url(images/punjabi/6.jpg);
+  }
+
+  100% {
+    background-image: url(images/punjabi/7.jpg);
+  }
+}
+.DAV-section-top {
+  margin: 80px 0px;
+  width: auto;
+  height: 57vh;
+  overflow: hidden;
+  position: relative;
+  background-image: url(images/DAV/1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: DAV 14s infinite ease-in-out;
+}
+
+@keyframes DAV {
+  0% {
+    background-image: url(images/DAV/2.jpg);
+  }
+
+  20% {
+    background-image: url(images/DAV/3.jfif);
+  }
+
+  40% {
+    background-image: url(images/DAV/4.jpg);
+  }
+
+  60% {
+    background-image: url(images/DAV/5.jfif);
+  }
+
+  80% {
+    background-image: url(images/DAV/6.jfif);
+  }
+
+  100% {
+    background-image: url(images/DAV/7.jfif);
+  }
+}
+.Panjab-section-top {
+  margin: 80px 0px;
+  width: auto;
+  height: 57vh;
+  overflow: hidden;
+  position: relative;
+  background-image: url(images/panjab/1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: Panjab 14s infinite ease-in-out;
+}
+
+@keyframes Panjab {
+  0% {
+    background-image: url(images/panjab/2.jpg);
+  }
+
+  20% {
+    background-image: url(images/panjab/3.jpg);
+  }
+
+  40% {
+    background-image: url(images/panjab/4.jpg);
+  }
+
+  60% {
+    background-image: url(images/panjab/5.jpg);
+  }
+
+  80% {
+    background-image: url(images/panjab/6.jpg);
+  }
+
+  100% {
+    background-image: url(images/panjab/7.jpg);
+  }
+}
+.Loyola-section-top {
+  margin: 80px 0px;
+  width: auto;
+  height: 57vh;
+  overflow: hidden;
+  position: relative;
+  background-image: url(images/LOYOLA/1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: Loyola 14s infinite ease-in-out;
+}
+
+@keyframes Loyola {
+  0% {
+    background-image: url(images/LOYOLA/2.jpg);
+  }
+
+  20% {
+    background-image: url(images/LOYOLA/3.jpg);
+  }
+
+  40% {
+    background-image: url(images/LOYOLA/4.jpg);
+  }
+
+  60% {
+    background-image: url(images/LOYOLA/5.jpg);
+  }
+
+  80% {
+    background-image: url(images/LOYOLA/6.jpg);
+  }
+
+  100% {
+    background-image: url(images/LOYOLA/7.jpg);
+  }
+}
+.Hindu-section-top {
+  margin: 80px 0px;
+  width: auto;
+  height: 57vh;
+  overflow: hidden;
+  position: relative;
+  background-image: url(images/HINDU/1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: Hindu 14s infinite ease-in-out;
+}
+
+@keyframes Hindu {
+  0% {
+    background-image: url(images/HINDU/2.jpg);
+  }
+
+  20% {
+    background-image: url(images/HINDU/3.jpg);
+  }
+
+  40% {
+    background-image: url(images/HINDU/4.jpg);
+  }
+
+  60% {
+    background-image: url(images/HINDU/5.jpg);
+  }
+
+  80% {
+    background-image: url(images/HINDU/6.jpg);
+  }
+
+  100% {
+    background-image: url(images/HINDU/7.jpg);
+  }
+}
+.Miranda-section-top {
+  margin: 80px 0px;
+  width: auto;
+  height: 57vh;
+  overflow: hidden;
+  position: relative;
+  background-image: url(images/MIRANDA/1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: Miranda 14s infinite ease-in-out;
+}
+
+@keyframes Miranda {
+  0% {
+    background-image: url(images/MIRANDA/2.jpg);
+  }
+
+  20% {
+    background-image: url(images/MIRANDA/3.jpg);
+  }
+
+  40% {
+    background-image: url(images/MIRANDA/4.jpg);
+  }
+
+  60% {
+    background-image: url(images/MIRANDA/5.jpg);
+  }
+
+  80% {
+    background-image: url(images/MIRANDA/6.jpg);
+  }
+
+  100% {
+    background-image: url(images/MIRANDA/7.jpg);
+  }
+}
+.Xavier-section-top {
+  margin: 80px 0px;
+  width: auto;
+  height: 57vh;
+  overflow: hidden;
+  position: relative;
+  background-image: url(images/Xavier/1.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  animation: Xavier 14s infinite ease-in-out;
+}
+
+@keyframes Xavier {
+  0% {
+    background-image: url(images/Xavier/2.jpg);
+  }
+
+  20% {
+    background-image: url(images/Xavier/3.jpg);
+  }
+
+  40% {
+    background-image: url(images/Xavier/4.jpg);
+  }
+
+  60% {
+    background-image: url(images/Xavier/5.jpg);
+  }
+
+  80% {
+    background-image: url(images/Xavier/6.jpg);
+  }
+
+  100% {
+    background-image: url(images/Xavier/7.jfif);
+  }
+}
+/* ---------CONTAINER FOR BULLET------------ */
+.bullet-container {
+  list-style: none;
+  -webkit-column-count: 2;
+  column-count: 2;
+  padding-left: 15px;
+  margin-top: 40px;
+  margin-bottom: 65px;
+}
+.bullet {
+  position: relative;
+  margin-bottom: 10px;
+  color: #000;
+  cursor: pointer;
+}
+.bullet:before {
+  content: "\2022";
+  color:#0abab0;
+  position: absolute;
+  left: -15px;
+}
+.admission-container {
+  list-style: none;
+  padding-left: 15px;
+  margin-top: 40px;
+  margin-bottom: 65px;
+}
+.chitkara-univerity-placements {
+  margin: 40px 0px;
+  color: dimgray;
+}
+h2 {
+  color: black;
+}
+/* -------------ASIDE GRID STARTED------------- */
+.university-logo {
+  padding: 40px 15px;
+}
+.adesh-university-logo {
+  padding: 40px 15px;
+  margin-left: 30px;
+}
+/* --------------APPLY FOR FIRST YEAR BUTTON--------------- */
+.aside-but {
+  /* margin-left: 69; */
+  margin-top: 20px;
+  margin-left: 15px;
+  margin-bottom: 50px;
+  font-size: 1.3rem;
+  border-radius: 25px;
+  padding: 5px;
+  cursor: pointer;
+  background-color: antiquewhite;
+  border: none;
+}
+.aside-but a {
+  text-decoration: none;
+}
+.aside-but:hover {
+  opacity: 0.7;
+  box-shadow: -0.5px -0.5px 20px 2px rgb(85, 83, 83);
+}
+/* -----------------ASIDE LOCATION---------------- */
+.location h2 {
+  margin-bottom: 40px;
+}
+.location img {
+  display: block;
+  height: 300px;
+  width: 400px;
+  margin: auto;
+}
+.location h3 {
+  margin-top: 40px;
+  color: gray;
+}
+.location p {
+  margin-top: 15px;
+  font-size: 1.15rem;
+}
+.location p a {
+  text-decoration: none;
+}
+.location p small {
+  margin-left: 50px;
+}
+.location i {
+  display: inline-block;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  padding: 0px 10px;
+}
+/* ----------------FOOTER---------------- */
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.322), black);
+  height: auto;
+  width:auto;
+  padding-top: 5px;
+  color: #fff;
+  border-radius: 50px 0px 35px 0px;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3 {
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.footer-content p {
+  margin: 10px auto;
+  font-size: 12px;
+  font-weight: 400;
+}
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: */
+}
+.socials li {
+  margin: 0 10px;
+}
+.socials a {
+  text-decoration: none;
+  color: #fff;
+}
+.socials a p {
+  font-size: 18px;
+}
+.socials a:hover p {
+  color: aqua;
+}
+.footer-bottom {
+  background: #000;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 0px 0px 50px 0px;
+}
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.9;
+  font-weight: 200;
+}
+.floating-but {
+  width: 80px;
+  height: 80px;
+  background: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border-radius:  30px 0px 30px 0px;
+  color: blue;
+  /* font-size: 20px; */
+  text-align: center;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
+/* ----------------------------END----------------------------- */

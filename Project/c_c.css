@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Gill Sans", sans-serif;
+  font-weight: 600;
+}
+body {
+  min-height: 100vh;
+  width: 90%;
+  position: relative;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* background-image: linear-gradient(); */
+}
+
+/* body{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), ;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+} */
+/* body{
+  background-image: url(../Images/Courses/selecting.png);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: 450px; */
+/* background-attachment: fixed; */
+/* } */
+/* ___________________________________NAVBAR_________________________________ */
+.container {
+  width: 90%;
+  margin: 0 auto;
+  display: inline;
+}
+
+header {
+  background: #0abab0;
+  border: 4px solid #0abab0;
+  border-radius: 25px 0px 25px 0px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+header::after {
+  content: "";
+  display: table;
+  clear: left;
+}
+header:hover{
+  transition: transform 0.4s;
+  transform: scale(1.1, 1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+
+.logo {
+  float: left;
+  padding: 7px 0;
+  cursor: pointer;
+  padding-left: 25px;
+}
+#sgn {
+  vertical-align: middle;
+}
+nav {
+  float: right;
+}
+
+nav li {
+  display: inline-block;
+  margin-left: 40px;
+  padding-top: 5px;
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+nav a:hover {
+  color: black;
+}
+
+nav a::after {
+  content: "";
+  display: block;
+  height: 1.5px;
+  background-color: blanchedalmond;
+  width: 100%;
+  position: absolute;
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 350ms ease;
+}
+
+nav a:hover::after {
+  width: 100%;
+  transform: scaleX(1);
+  height: 1.5px;
+  background-color: #30475e;
+  transform-origin: left;
+}
+/* ________________________________BODY_______________________________ */
+.course_Header {
+  text-align: center;
+  padding: 30px;
+  font-size: 40px;
+}
+.opt_box {
+  width: 60%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  border-radius: 50px 0px 50px 0px;
+  overflow: hidden;
+  font-family: "Quicksand", sans-serif;
+  background: #0abab0;
+  margin: 5px auto;
+}
+.opt_box:hover {
+  transition: transform 0.4s;
+  transform: scale(0.9, 0.9);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.opt_box_label,
+._content {
+  padding: 14px 20px;
+}
+
+.opt_box_label {
+  display: block;
+  color: #000000;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+}
+
+.opt_box_label:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.opt_box_label::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 20px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../Images/Courses/down.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: transform 0.4s;
+}
+
+.chk_bx:checked ~ .opt_box_label::after {
+  transform: translateY(-50%) rotate(0.5turn);
+}
+._content {
+  background: #ffffff;
+  /* line-height: 1.6; */
+  /* font-size: 0.85em; */
+  display: none;
+}
+
+.chk_bx {
+  display: none;
+}
+#section1 {
+  padding-left: 35px;
+}
+#section2 {
+  padding-left: 30px;
+}
+.opt_box label {
+  font-size: 23px;
+}
+#section1::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../Images/Courses/setting.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.chk_bx:checked ~ ._content {
+  display: block;
+}
+._opt {
+  width: 250px;
+  position: relative;
+  display: inline-block;
+  box-sizing: border-box;
+  flex-direction: column;
+  background-color: #eff6f8;
+  margin: 2px;
+  cursor: pointer;
+  padding: 4px;
+  border-radius: 25px 0px 25px 0px;
+  line-height: 0.8;
+  box-shadow: inset 0 0 8px rgba(0, 0, 0, 0.2);
+}
+.opt_content {
+  font-size: 18px;
+  padding: 4px;
+}
+.sml_txt {
+  font-size: 12px;
+  font-weight: 700;
+}
+._content a {
+  text-decoration: none;
+  color: rgb(51, 47, 47);
+}
+._opt:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+  transition: transform 0.4s;
+  transform: scale(1.1, 1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.opt_content::after {
+  content: "";
+  position: absolute;
+  top: 30%;
+  right: 15px;
+  width: 15px;
+  height: 15px;
+  background-image: url(../Images/Courses/arrow-point-to-right.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+#_01 li {
+  display: inline-block;
+  margin: 3px;
+}
+
+#section2::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: 10px;
+  width: 20px;
+  height: 20px;
+  background-image: url(../Images/Courses/rupee.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+/*____________________________FOOTER______________________________________ */
+footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.322), black);
+  height: auto;
+  width: auto;
+  padding-top: 5px;
+  color: #fff;
+  border-radius: 50px 0px 35px 0px;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3 {
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: capitalize;
+}
+.footer-content p {
+  margin: 10px auto;
+  font-size: 12px;
+  font-weight: 400;
+}
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* margin: */
+}
+.socials li {
+  margin: 0 10px;
+}
+.socials a {
+  text-decoration: none;
+  color: #fff;
+}
+.socials a p {
+  font-size: 18px;
+}
+.socials a:hover p {
+  color: aqua;
+}
+.footer-bottom {
+  background: #000;
+  padding: 10px 0;
+  text-align: center;
+  border-radius: 0px 0px 50px 0px;
+}
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+  font-weight: 400;
+}
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.9;
+  font-weight: 200;
+}
+footer:hover{
+  transition: transform 0.4s;
+  transform: scale(1.1, 1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
+.hover:hover {
+  transition: transform 0.4s;
+  transform: scale(1.1, 1.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  /* background-color:lightgrey; */
+  border-radius: 70px 0px 70px 0px;
+}
