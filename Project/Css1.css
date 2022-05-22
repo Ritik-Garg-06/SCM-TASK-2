@@ -179,7 +179,7 @@ article {
   border-radius: 70px 0px 70px 0px;
 }
 article:hover{
-  transition: transform 0.4s;
+  transition: transform 0.6s;
   transform: scale(0.9, 0.9);
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
@@ -707,7 +707,7 @@ button:hover{
   color: #63e7bb;
   /* font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif; */
   border-radius: 100%;
-  width: 150px;
+  width: 149px;
 }
 .section-top {
   margin-top: 20px;
