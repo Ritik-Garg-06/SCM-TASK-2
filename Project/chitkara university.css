@@ -1030,7 +1030,7 @@ footer {
   background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.322), black);
   height: auto;
   width:auto;
-  padding-top: 5px;
+  padding-top: 1px;
   color: #fff;
   border-radius: 50px 0px 35px 0px;
 }
@@ -1047,8 +1047,8 @@ footer {
   text-transform: capitalize;
 }
 .footer-content p {
-  margin: 10px auto;
-  font-size: 12px;
+  margin: 5px auto;
+  font-size: 10px;
   font-weight: 400;
 }
 .socials {
